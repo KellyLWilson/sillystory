@@ -33,7 +33,9 @@ let newStory = newStory.replace(':insertX:',xItem);
 
   if(customName.value !== '') {
     let name = customName.value;
-    newStory = newStory.replace(‘Bob’,name);
+    newStory = newStory.replace('Bob', name);
+
+  }
 
   }
 
