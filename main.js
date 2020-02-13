@@ -3,7 +3,7 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
-function randonValueFromArray(array){
+function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
 }
@@ -14,16 +14,15 @@ let insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
 let insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
 let insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
 
-
-let newStory = storyText;
-let xItem = randomValueFromArray(insertX);
-let yItem = randomValueFromArray(insertY);
-let zItem = randomValueFromArray(insertZ);
-
 randomize.addEventListener('click', result);
 
 function result() {
 
+  let newStory = storyText;
+  let xItem = randomValueFromArray(insertX);
+  let yItem = randomValueFromArray(insertY);
+  let zItem = randomValueFromArray(insertZ);  
+  
     newStory = newStory.replace(':insertX:',xItem);
     newStory = newStory.replace(':insertX:',xItem);
     newStory = newStory.replace(':insertY:',yItem);
