@@ -38,8 +38,6 @@ let newStory = newStory.replace(':insertX:',xItem);
 
   }
 
-  }
-
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300*0.0714286) + ' stone';
     let temperature =  Math.round((94-32) * 5 / 9) + ' centigrade';
@@ -49,7 +47,6 @@ let newStory = newStory.replace(':insertX:',xItem);
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
-}
 
 
 
