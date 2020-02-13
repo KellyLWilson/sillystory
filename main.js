@@ -17,11 +17,11 @@ let insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk'
 randomize.addEventListener('click', result);
 
 function result() {
-
   let newStory = storyText;
+
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
-  let zItem = randomValueFromArray(insertZ);  
+  let zItem = randomValueFromArray(insertZ);
   
     newStory = newStory.replace(':insertX:',xItem);
     newStory = newStory.replace(':insertX:',xItem);
