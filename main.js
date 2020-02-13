@@ -47,11 +47,3 @@ let newStory = newStory.replace(':insertX:',xItem);
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
-
-
-
-
-
-
-
-
